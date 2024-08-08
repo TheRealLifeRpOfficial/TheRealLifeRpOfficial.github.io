@@ -94,21 +94,19 @@
             <li><span>15. Meta-gaming</span>It is not allowed to use information obtained outside of the game.</li>
             <li><span>16. Baiting</span>It is not permitted to deliberately try to attract the attention of police officers and/or KMar members or to keep them from their work without good reason.</li>
             <li>
-                <span>17. Criminaliteit & Ambtenaren</span>
-                Voor overheidsmedewerkers is het niet toegestaan om zich op welke manier dan ook bezig te houden met illegale praktijken of illegale spullen in bezit te hebben, als dit niet ten behoeve is van de uitvoering van hun baan. Dit is op beoordeling van een stafflid. Voorafgaand aan de start bij de overheidsbaan is het vereist dat medewerkers geen illegale zaken meer in hun bezit hebben.<br><br>
-                Organisaties die van toepassing zijn op lid 1 zijn:<br>
-                Politiekorps<br>
-                Koninklijke Marechaussee<br>
-                Ambulancezorg<br>
-                ANWB<br>
-                Ministerie van Justitie<br>
-                Gemeente<br>
-                Indien een overheidsmedewerker betrapt wordt op het bezighouden met illegale praktijken zal dit naast de basisstraf resulteren in ontslag op staande voet bij de organisatie in kwestie.<br><br>
-                Het is niet toegestaan om in het bezit te zijn van objecten die afkomstig zijn van een overheidsdienst, zoals onder andere maar niet beperkt tot:<br>
-                Dienstwapens<br>
-                Het is voor overheidsmedewerkers niet toegestaan om buiten hun dienst hun dienstwapens te dragen indien dit van toepassing is.<br><br>
-                Een uitzondering op lid 5 geldt voor medewerkers van de politie die een specialistische training hebben gehad. Deze medewerkers mogen wel hun dienstwapens buiten hun dienst dragen ten behoeve van de uitvoering van het werk.
-            </li>
+<span>17. Crime & Civil Servants</span>
+Government employees are not permitted to engage in illegal practices or possess illegal items in any way, if this is not for the purpose of performing their job. This is at the discretion of a staff member. Before starting a government job, employees are required to no longer have any illegal items in their possession.<br><br>
+Organizations that apply to paragraph 1 are:<br>
+Police force<br>
+Royal Military Police<br>
+Ministry of Justice<br>
+Municipality<br>
+If a government employee is caught engaging in illegal practices, this will result in summary dismissal from the organization in question in addition to the basic penalty.<br><br>
+It is not permitted to be in possession of objects that originate from a government service, such as but not limited to:<br>
+Service weapons<br>
+Government employees are not permitted to carry their service weapons outside of their duties if this is applicable.<br><br>
+An exception for police employees who have had specialist training. These employees are permitted to carry their service weapons outside of their duties for the purpose of carrying out their work.
+</li>
         </ul>
     </div>
 </body>
