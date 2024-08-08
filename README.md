@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #f4f7f6;
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,56 +16,99 @@
             min-height: 100vh;
             color: #333;
         }
+
         .rules-container {
             background-color: #ffffff;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            padding: 25px;
             width: 90%;
-            max-width: 700px;
+            max-width: 800px;
             margin: 20px;
+            transition: all 0.3s ease;
         }
+
+        .rules-container:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
         .rules-container img {
             width: 100%;
             border-radius: 12px;
             margin-bottom: 20px;
+            transition: transform 0.3s ease;
         }
+
+        .rules-container img:hover {
+            transform: scale(1.03);
+        }
+
         h1 {
             text-align: center;
             color: #2c3e50;
-            font-size: 2em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
+
         ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
+
         li {
-            background-color: #f2f2f2;
+            background-color: #f9f9f9;
             margin: 10px 0;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
-            font-size: 1.1em;
+            font-size: 1.15em;
             line-height: 1.6em;
             transition: transform 0.2s ease, background-color 0.2s ease;
+            border-left: 6px solid #2980b9;
         }
+
         li:hover {
-            transform: translateY(-3px);
-            background-color: #e1e1e1;
+            transform: translateY(-5px);
+            background-color: #ecf0f1;
         }
+
         li span {
             font-weight: bold;
             color: #2980b9;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
         }
+
+        li ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        li ul li {
+            background-color: transparent;
+            padding-left: 10px;
+            border-left: none;
+        }
+
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.6em;
+                font-size: 1.8em;
             }
+
             li {
                 font-size: 1em;
-                padding: 12px;
+                padding: 15px;
+            }
+
+            li span {
+                font-size: 1.1em;
+            }
+
+            .rules-container {
+                padding: 20px;
             }
         }
     </style>
