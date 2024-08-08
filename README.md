@@ -88,6 +88,7 @@
             <li><span>12. Bounties</span>Bounties are not permitted to avoid complaints about random deaths.</li>
             <li><span>13. Banned Cars & Guns</span>Do not use any banned cars or guns listed below. Non-compliance will result in punishment.</li>
             <li><span>14. Void Roleplay</span>Invalid or interrupted roleplays should be considered void and disregarded.</li>
+            <li><span>15. Meta-gaming</span>It is not allowed to use information obtained outside of the game.</li>
         </ul>
     </div>
 </body>
