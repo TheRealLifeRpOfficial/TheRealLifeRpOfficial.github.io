@@ -24,6 +24,11 @@
             max-width: 700px;
             margin: 20px;
         }
+        .rules-container img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
         h1 {
             text-align: center;
             color: #2c3e50;
@@ -66,6 +71,7 @@
 </head>
 <body>
     <div class="rules-container">
+        <img src="https://cdn.discordapp.com/attachments/1253667157166915674/1264638686427877427/Designer.jpeg?ex=66b5ac4e&is=66b45ace&hm=08f68a4228b0c8bbcfb5c28f45a7d6df860f19ee6f2d7ac500c9c4d711e8a6f4&" alt="Designer Image">
         <h1>Roleplay Rules</h1>
         <ul>
             <li><span>1. Realism in Roleplay</span>Ensure that all actions within the roleplay are realistic.</li>
