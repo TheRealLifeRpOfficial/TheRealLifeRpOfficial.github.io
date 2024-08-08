@@ -89,6 +89,7 @@
             <li><span>13. Banned Cars & Guns</span>Do not use any banned cars or guns listed below. Non-compliance will result in punishment.</li>
             <li><span>14. Void Roleplay</span>Invalid or interrupted roleplays should be considered void and disregarded.</li>
             <li><span>15. Meta-gaming</span>It is not allowed to use information obtained outside of the game.</li>
+            <li><span>16. Baiting</span>It is not permitted to deliberately try to attract the attention of police officers and/or KMar members or to keep them from their work without good reason. If the police and/or KMar want to approach you for a regular check and you decide to drive away, while you are not carrying any illegal goods, this falls under copbaiting.</li>
         </ul>
     </div>
 </body>
