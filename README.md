@@ -93,20 +93,23 @@
             <li><span>14. Void Roleplay</span>Invalid or interrupted roleplays should be considered void and disregarded.</li>
             <li><span>15. Meta-gaming</span>It is not allowed to use information obtained outside of the game.</li>
             <li><span>16. Baiting</span>It is not permitted to deliberately try to attract the attention of police officers and/or KMar members or to keep them from their work without good reason.</li>
-            <li>
-<span>17. Crime & Civil Servants</span>
-Government employees are not permitted to engage in illegal practices or possess illegal items in any way, if this is not for the purpose of performing their job. This is at the discretion of a staff member. Before starting a government job, employees are required to no longer have any illegal items in their possession.<br><br>
-Organizations that apply to paragraph 1 are:<br>
-Police force<br>
-Royal Military Police<br>
-Ministry of Justice<br>
-Municipality<br>
-If a government employee is caught engaging in illegal practices, this will result in summary dismissal from the organization in question in addition to the basic penalty.<br><br>
-It is not permitted to be in possession of objects that originate from a government service, such as but not limited to:<br>
-Service weapons<br>
-Government employees are not permitted to carry their service weapons outside of their duties if this is applicable.<br><br>
-An exception for police employees who have had specialist training. These employees are permitted to carry their service weapons outside of their duties for the purpose of carrying out their work.
-</li>
+            <li><span>17. Crime & Government Employees</span>Government employees are strictly prohibited from engaging in any illegal activities or possessing illegal items, unless it is necessary for the execution of their job duties. This is subject to the judgment of a staff member. Before beginning their role within the government, employees are required to ensure that they no longer possess any illegal items.
+                <br><br>
+                The following organizations are subject to this rule:
+                <ul>
+                    <li>Police Force</li>
+                    <li>Royal Netherlands Marechaussee</li>
+                    <li>Ministry of Justice</li>
+                    <li>Government</li>
+                </ul>
+                If a government employee is caught engaging in illegal activities, in addition to the standard penalty, they will face immediate dismissal from the relevant organization.
+                <br><br>
+                It is prohibited to possess items that originate from a government service, including but not limited to:
+                <ul>
+                    <li>Service weapons</li>
+                </ul>
+                Government employees are not allowed to carry their service weapons outside of duty, if applicable. An exception is made for police officers who have undergone specialized training. These officers are permitted to carry their service weapons outside of duty for the purpose of executing their work.
+            </li>
         </ul>
     </div>
 </body>
