@@ -101,15 +101,11 @@
                 Koninklijke Marechaussee<br>
                 Ambulancezorg<br>
                 ANWB<br>
-                SPEC<br>
                 Ministerie van Justitie<br>
-                Gemeente Springbank<br><br>
+                Gemeente<br>
                 Indien een overheidsmedewerker betrapt wordt op het bezighouden met illegale praktijken zal dit naast de basisstraf resulteren in ontslag op staande voet bij de organisatie in kwestie.<br><br>
                 Het is niet toegestaan om in het bezit te zijn van objecten die afkomstig zijn van een overheidsdienst, zoals onder andere maar niet beperkt tot:<br>
                 Dienstwapens<br>
-                Medische tassen<br>
-                Repairkits<br>
-                Handboeien<br><br>
                 Het is voor overheidsmedewerkers niet toegestaan om buiten hun dienst hun dienstwapens te dragen indien dit van toepassing is.<br><br>
                 Een uitzondering op lid 5 geldt voor medewerkers van de politie die een specialistische training hebben gehad. Deze medewerkers mogen wel hun dienstwapens buiten hun dienst dragen ten behoeve van de uitvoering van het werk.
             </li>
