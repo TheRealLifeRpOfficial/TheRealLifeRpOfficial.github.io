@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roleplay Rules</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1253667157166915674/1264638686427877427/Designer.jpeg?ex=66b5ac4e&is=66b45ace&hm=08f68a4228b0c8bbcfb5c28f45a7d6df860f19ee6f2d7ac500c9c4d711e8a6f4&" type="image/jpeg">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -89,9 +90,7 @@
             <li><span>13. Banned Cars & Guns</span>Do not use any banned cars or guns listed below. Non-compliance will result in punishment.</li>
             <li><span>14. Void Roleplay</span>Invalid or interrupted roleplays should be considered void and disregarded.</li>
             <li><span>15. Meta-gaming</span>It is not allowed to use information obtained outside of the game.</li>
-            <li><span>16. Baiting</span>It is not permitted to deliberately try to attract the attention of police officers and/or KMar members or to keep them from their work without good reason. 
-                
-If the police and/or KMar want to approach you for a regular check and you decide to drive away, while you are not carrying any illegal goods, this falls under copbaiting.</li>
+            <li><span>16. Baiting</span>It is not permitted to deliberately try to attract the attention of police officers and/or KMar members or to keep them from their work without good reason.</li>
         </ul>
     </div>
 </body>
