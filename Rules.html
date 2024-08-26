@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
+            background-color: #eef2f3;
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,8 +21,8 @@
         .rules-container {
             background-color: #ffffff;
             border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            padding: 25px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            padding: 30px;
             width: 90%;
             max-width: 800px;
             margin: 20px;
@@ -30,7 +30,7 @@
         }
 
         .rules-container:hover {
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
         }
 
         .rules-container img {
@@ -67,7 +67,7 @@
             font-size: 1.15em;
             line-height: 1.6em;
             transition: transform 0.2s ease, background-color 0.2s ease;
-            border-left: 6px solid #2980b9;
+            border-left: 6px solid #3498db;
         }
 
         li:hover {
@@ -77,7 +77,7 @@
 
         li span {
             font-weight: bold;
-            color: #2980b9;
+            color: #3498db;
             display: block;
             margin-bottom: 10px;
             font-size: 1.2em;
@@ -92,6 +92,29 @@
             background-color: transparent;
             padding-left: 10px;
             border-left: none;
+        }
+
+        .join-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .join-button a {
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .join-button a:hover {
+            background-color: #2980b9;
         }
 
         @media (max-width: 600px) {
@@ -111,13 +134,18 @@
             .rules-container {
                 padding: 20px;
             }
+
+            .join-button a {
+                font-size: 1em;
+                padding: 12px 25px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="rules-container">
         <a href="https://discord.gg/vcvNu7SXDY" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn.discordapp.com/icons/1252251878134382724/bb590efc84081c43f7f542aec5d8e30b.png?size=1024&" alt="Designer Image">
+            <img src="https://cdn.discordapp.com/icons/1252251878134382724/bb590efc84081c43f7f542aec5d8e30b.png?size=1024&" alt="Roleplay Community Logo">
         </a>
         <h1>Roleplay Rules</h1>
         <ul>
@@ -155,6 +183,9 @@
                 Government employees are not allowed to carry their service weapons outside of duty, if applicable. An exception is made for police officers who have undergone specialized training. These officers are permitted to carry their service weapons outside of duty for the purpose of executing their work.
             </li>
         </ul>
+        <div class="join-button">
+            <a href="https://discord.gg/vcvNu7SXDY" target="_blank" rel="noopener noreferrer">Join Us</a>
+        </div>
     </div>
 </body>
 </html>
