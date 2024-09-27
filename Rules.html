@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roleplay Rules</title>
+    <title>Roleplay Regels</title>
     <link rel="icon" href="https://i.ibb.co/BfHCYBX/RLRP-2.jpg" type="image/jpeg">
-    <!-- Toevoegen van Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
         body {
             font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
             margin: 0;
             padding: 0;
             color: #333;
         }
 
+        .navbar {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar h2 {
+            color: #fff;
+            margin: 0;
+            font-weight: 700;
+        }
+
         .rules-container {
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-            padding: 30px;
-            width: 90%;
-            max-width: 800px;
-            margin: 50px auto;
-            backdrop-filter: blur(10px);
+            padding: 40px;
+            max-width: 1000px;
+            margin: 30px auto;
             transition: all 0.3s ease;
         }
 
@@ -35,7 +46,7 @@
         .rules-container img {
             width: 100%;
             border-radius: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             transition: transform 0.3s ease;
         }
 
@@ -46,10 +57,11 @@
         h1 {
             text-align: center;
             color: #2c3e50;
-            font-size: 2.5em;
-            margin-bottom: 25px;
+            font-size: 3em;
+            margin-bottom: 30px;
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         ul {
@@ -59,52 +71,55 @@
         }
 
         li {
-            background-color: #ffffff;
-            margin: 10px 0;
-            padding: 20px;
+            background-color: #f9f9f9;
+            margin: 15px 0;
+            padding: 25px;
             border-radius: 8px;
-            font-size: 1.15em;
-            line-height: 1.6em;
+            font-size: 1.2em;
+            line-height: 1.8em;
+            transition: transform 0.2s ease, background-color 0.2s ease;
             border-left: 6px solid #3498db;
             position: relative;
-            overflow: hidden;
         }
 
-        li::before {
+        li:before {
             content: '';
             position: absolute;
-            left: 0;
-            width: 6px;
-            height: 100%;
-            background: linear-gradient(45deg, #3498db, #8e44ad);
-            transition: all 0.3s ease;
-        }
-
-        li:hover::before {
-            width: 100%;
+            top: -10px;
+            left: -10px;
+            height: calc(100% + 20px);
+            width: calc(100% + 20px);
+            border: 2px dashed #3498db;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         li:hover {
-            color: #fff;
-            background-color: transparent;
+            transform: translateY(-5px);
+            background-color: #ecf0f1;
+        }
+
+        li:hover:before {
+            opacity: 1;
         }
 
         li span {
             font-weight: bold;
             color: #2c3e50;
             display: block;
-            margin-bottom: 10px;
-            font-size: 1.2em;
+            margin-bottom: 15px;
+            font-size: 1.4em;
         }
 
         li ul {
             list-style-type: disc;
-            margin-left: 20px;
+            margin-left: 40px;
         }
 
         li ul li {
             background-color: transparent;
-            padding-left: 10px;
+            padding-left: 0;
             border-left: none;
         }
 
@@ -112,26 +127,65 @@
             display: block;
             width: 100%;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
         .join-button a {
             text-decoration: none;
-            background: linear-gradient(45deg, #3498db, #8e44ad);
+            background-color: #e74c3c;
             color: #fff;
-            padding: 15px 30px;
-            border-radius: 8px;
-            font-size: 1.2em;
-            font-weight: 600;
-            transition: background 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 18px 36px;
+            border-radius: 50px;
+            font-size: 1.5em;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .join-button a:hover {
-            background: linear-gradient(45deg, #8e44ad, #3498db);
+            background-color: #c0392b;
+            transform: translateY(-3px);
         }
 
-        @media (max-width: 600px) {
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            li {
+                font-size: 1.1em;
+                padding: 20px;
+            }
+
+            li span {
+                font-size: 1.3em;
+            }
+
+            .rules-container {
+                padding: 30px;
+                margin: 20px;
+            }
+
+            .join-button a {
+                font-size: 1.2em;
+                padding: 15px 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
             h1 {
                 font-size: 1.8em;
             }
@@ -142,12 +196,12 @@
             }
 
             li span {
-                font-size: 1.1em;
+                font-size: 1.2em;
             }
 
             .rules-container {
                 padding: 20px;
-                margin: 20px;
+                margin: 15px;
             }
 
             .join-button a {
@@ -158,29 +212,32 @@
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <h2>Welkom bij onze Roleplay Community</h2>
+    </div>
     <div class="rules-container">
         <a href="https://discord.gg/vcvNu7SXDY" target="_blank" rel="noopener noreferrer">
             <img src="https://i.ibb.co/BfHCYBX/RLRP-2.jpg" alt="Roleplay Community Logo">
         </a>
-        <h1>Roleplay Rules</h1>
+        <h1>Roleplay Regels</h1>
         <ul>
             <li><span>1. Realisme in Roleplay</span>Zorg ervoor dat alle acties binnen de roleplay realistisch zijn.</li>
-            <li><span>2. RDM & VDM</span>Val anderen of voertuigen alleen aan als je een geldige reden hebt.</li>
-            <li><span>3. New Life Rule</span>Na je dood begin je als een nieuw personage en keer je niet terug naar je vorige scène.</li>
-            <li><span>4. Cuff Rushing</span>Om iemand te boeien, moet je "cuffs" zeggen om aan te geven dat je hen vastbindt.</li>
-            <li><span>5. Staffleden</span>Volg altijd de instructies van staffleden op; zij hebben het laatste woord.</li>
-            <li><span>6. Roblox & ER:LC TOS</span>Houd je aan de Roblox en ER:LC Terms of Service. Overtredingen worden streng aangepakt.</li>
-            <li><span>7. Auto-Jailing</span>Klik niet op "arrest" terwijl de verdachte in de boeien is; je moet hen vervoeren. Als de verdachte twee keer "detain requests" weigert, mag je hen opsluiten.</li>
-            <li><span>8. Groene Zones</span>Alle civiele spawns zijn beschermde groene zones; hier mag niet geschoten of beroofd worden.</li>
-            <li><span>9. Liveries & Uniformen</span>Draag je een specifiek uniform, gebruik dan ook de bijbehorende voertuigbestickering.</li>
-            <li><span>10. Crash Roleplay</span>Alle ongelukken boven de 50 km/u moeten worden uitgespeeld. Nalaten hiervan leidt tot strenge sancties.</li>
+            <li><span>2. RDM & VDM</span>Schiet alleen op individuen of voertuigen als je een geldige reden hebt.</li>
+            <li><span>3. New Life Rule</span>Na het overlijden begin je als een nieuw personage en keer je niet terug naar je vorige scène.</li>
+            <li><span>4. Cuff Rushing</span>Om iemand te boeien, moet je "boeien" zeggen om aan te geven dat je hen vastbindt.</li>
+            <li><span>5. Staff Leden</span>Volg altijd de instructies van staff leden op; zij hebben het laatste woord in zaken.</li>
+            <li><span>6. Roblox & ER:LC TOS</span>Houd je aan de Roblox en ER:LC Gebruiksvoorwaarden. Overtredingen worden streng gemodereerd.</li>
+            <li><span>7. Auto-Jailing</span>Klik niet op "arrest" terwijl de verdachte geboeid is; je moet hen vervoeren. Als de verdachte twee keer de "detain requests" afwijst, mag je hen gevangen zetten.</li>
+            <li><span>8. Groene Zones</span>Alle burger spawns zijn beschermd in aangewezen groene zones; er mag niet worden geschoten of beroofd.</li>
+            <li><span>9. Liveries & Uniformen</span>Wanneer je een specifiek uniform draagt, moet je de bijbehorende voertuigbestickering gebruiken.</li>
+            <li><span>10. Crash Roleplay</span>Alle crashes boven de 80 km/u moeten worden geroleplayed. Het niet doen hiervan resulteert in strikte moderatie.</li>
             <li><span>11. Roleplay Verzoeken</span>Sommige roleplays vereisen voorafgaande toestemming van staff.</li>
-            <li><span>12. Bounties</span>Bounties zijn niet toegestaan om klachten over willekeurige moorden te voorkomen.</li>
-            <li><span>13. Verboden Auto's & Wapens</span>Gebruik geen verboden auto's of wapens zoals hieronder vermeld. Niet-naleving leidt tot straf.</li>
-            <li><span>14. Void Roleplay</span>Ongeldige of onderbroken roleplays moeten als nietig worden beschouwd en genegeerd.</li>
+            <li><span>12. Bounties</span>Bounties zijn niet toegestaan om klachten over willekeurige doden te voorkomen.</li>
+            <li><span>13. Verboden Auto's & Wapens</span>Gebruik geen verboden auto's of wapens die hieronder zijn vermeld. Niet-naleving resulteert in straf.</li>
+            <li><span>14. Roleplay Ongeldig Verklaren</span>Ongeldige of onderbroken roleplays moeten als ongeldig worden beschouwd en genegeerd.</li>
             <li><span>15. Meta-gaming</span>Het is niet toegestaan om informatie te gebruiken die buiten het spel is verkregen.</li>
-            <li><span>16. Baiting</span>Het is niet toegestaan om opzettelijk de aandacht van politie- of KMar-leden te trekken zonder goede reden.</li>
-            <li><span>17. Criminaliteit & Overheidspersoneel</span>Overheidspersoneel mag zich niet bezighouden met illegale activiteiten of in het bezit zijn van illegale items, tenzij dit noodzakelijk is voor hun werkzaamheden en onder oordeel van een stafflid. Voor aanvang van hun functie moeten ze ervoor zorgen dat ze geen illegale items bezitten.
+            <li><span>16. Baiting</span>Het is niet toegestaan om opzettelijk te proberen de aandacht van politieagenten en/of KMar-leden te trekken of hen zonder goede reden van hun werk te houden.</li>
+            <li><span>17. Misdaad & Overheidspersoneel</span>Overheidspersoneel is strikt verboden om deel te nemen aan illegale activiteiten of om illegale items in bezit te hebben, tenzij dit noodzakelijk is voor de uitvoering van hun taken. Dit is onderhevig aan het oordeel van een stafflid. Voordat zij hun rol binnen de overheid beginnen, moeten medewerkers ervoor zorgen dat zij geen illegale items meer in hun bezit hebben.
                 <br><br>
                 De volgende organisaties vallen onder deze regel:
                 <ul>
@@ -189,18 +246,21 @@
                     <li>Ministerie van Justitie</li>
                     <li>Overheid</li>
                 </ul>
-                Bij overtreding volgt naast de standaardstraf ook directe ontslag uit de betreffende organisatie.
+                Als een overheidsmedewerker wordt betrapt op illegale activiteiten, zal hij of zij naast de standaardstraf ook direct worden ontslagen uit de betreffende organisatie.
                 <br><br>
-                Het is verboden om in het bezit te zijn van items afkomstig van een overheidsdienst, zoals:
+                Het is verboden om items in bezit te hebben die afkomstig zijn van een overheidsdienst, waaronder maar niet beperkt tot:
                 <ul>
                     <li>Dienstwapens</li>
                 </ul>
-                Overheidspersoneel mag hun dienstwapens niet buiten diensttijd dragen, tenzij ze hiervoor speciaal zijn opgeleid.
+                Overheidspersoneel mag hun dienstwapens niet buiten dienst dragen, indien van toepassing. Een uitzondering wordt gemaakt voor politieagenten die een gespecialiseerde training hebben ondergaan. Deze agenten mogen hun dienstwapens buiten dienst dragen voor het uitvoeren van hun werkzaamheden.
             </li>
         </ul>
         <div class="join-button">
             <a href="https://discord.gg/vcvNu7SXDY" target="_blank" rel="noopener noreferrer">Doe met ons mee</a>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2023 Roleplay Community. Alle rechten voorbehouden.</p>
+    </footer>
 </body>
 </html>
