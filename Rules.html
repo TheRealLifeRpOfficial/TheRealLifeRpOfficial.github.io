@@ -1,235 +1,223 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealLifeRp - Roleplay Regels</title>
+    <title>RealLifeRp - APV</title>
     <link rel="icon" href="https://i.ibb.co/BfHCYBX/RLRP-2.jpg" type="image/jpeg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+    <!-- Stylesheet -->
     <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('https://i.ibb.co/7K0y1c2/fivem-background.jpg');
-            background-size: cover;
-            background-position: center;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
             color: #ffffff;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.7);
-            overflow: hidden;
+        /* Header Styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 20px;
-        }
-
-        .navbar h1 {
-            float: left;
-            color: #fff;
-            text-transform: uppercase;
-            margin: 0;
-        }
-
-        .navbar ul {
-            list-style: none;
-            float: right;
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar ul li {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        .navbar ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        .navbar ul li a:hover {
-            color: #3498db;
-        }
-
-        .rules-container {
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-            padding: 30px;
-            width: 90%;
-            max-width: 800px;
-            margin: 80px auto 20px auto;
-            transition: all 0.3s ease;
-        }
-
-        .rules-container:hover {
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
-        }
-
-        .rules-container img {
-            width: 100%;
-            border-radius: 12px;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .rules-container img:hover {
-            transform: scale(1.03);
-        }
-
-        h2 {
             text-align: center;
-            color: #fff;
-            font-size: 2.5em;
-            margin-bottom: 25px;
-            font-weight: 700;
-            letter-spacing: 1px;
         }
 
-        ul {
+        header img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            margin-top: 15px;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Main Content Styles */
+        main {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .rules-list {
             list-style: none;
-            padding: 0;
-            margin: 0;
         }
 
-        li {
+        .rules-list li {
             background-color: rgba(255, 255, 255, 0.1);
-            margin: 10px 0;
+            margin-bottom: 20px;
             padding: 20px;
+            border-left: 5px solid #3498db;
             border-radius: 8px;
-            font-size: 1.15em;
-            line-height: 1.6em;
-            transition: transform 0.2s ease, background-color 0.2s ease;
-            border-left: 6px solid #3498db;
+            transition: background-color 0.3s ease;
         }
 
-        li:hover {
-            transform: translateY(-5px);
+        .rules-list li:hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
 
-        li span {
-            font-weight: bold;
-            color: #ffffff;
+        .rules-list li span {
+            font-weight: 700;
+            font-size: 1.5em;
             display: block;
             margin-bottom: 10px;
-            font-size: 1.2em;
+            color: #f1c40f;
         }
 
-        li ul {
+        .rules-list li ul {
+            margin-top: 10px;
             list-style-type: disc;
             margin-left: 20px;
         }
 
-        li ul li {
-            background-color: transparent;
-            padding-left: 10px;
-            border-left: none;
+        .rules-list li ul li {
+            margin-bottom: 5px;
         }
 
+        /* Join Button Styles */
         .join-button {
-            display: block;
-            width: 100%;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
         .join-button a {
             text-decoration: none;
-            background-color: #e74c3c;
+            background-color: #e67e22;
             color: #fff;
-            padding: 15px 30px;
-            border-radius: 8px;
-            font-size: 1.2em;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.5em;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
         .join-button a:hover {
-            background-color: #c0392b;
+            background-color: #d35400;
+            transform: translateY(-5px);
         }
 
-        @media (max-width: 600px) {
-            h2 {
-                font-size: 1.8em;
+        /* Footer Styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+            color: #bdc3c7;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
             }
 
-            li {
-                font-size: 1em;
-                padding: 15px;
-            }
-
-            li span {
-                font-size: 1.1em;
-            }
-
-            .rules-container {
-                padding: 20px;
+            .rules-list li span {
+                font-size: 1.2em;
             }
 
             .join-button a {
-                font-size: 1em;
-                padding: 12px 25px;
-            }
-
-            .navbar h1 {
-                font-size: 1.5em;
-            }
-
-            .navbar ul li {
-                display: block;
-                margin: 10px 0;
-                text-align: center;
-            }
-
-            .navbar ul {
-                float: none;
-            }
-
-            .navbar h1 {
-                float: none;
-                text-align: center;
-                margin-bottom: 10px;
+                font-size: 1.2em;
+                padding: 12px 30px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <h1>RealLifeRp</h1>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Regels</a></li>
-            <li><a href="#">Forum</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-    <div class="rules-container">
+    <!-- Header Section -->
+    <header>
         <a href="https://discord.gg/vcvNu7SXDY" target="_blank" rel="noopener noreferrer">
-            <img src="https://i.ibb.co/BfHCYBX/RLRP-2.jpg" alt="RealLifeRp Community Logo">
+            <img src="https://i.ibb.co/BfHCYBX/RLRP-2.jpg" alt="RealLifeRp Logo">
         </a>
-        <h2>Roleplay Regels</h2>
-        <ul>
-            <li><span>1. Realisme in Roleplay</span>Zorg ervoor dat alle acties binnen de roleplay realistisch zijn.</li>
-            <li><span>2. RDM & VDM</span>Schiet alleen op individuen of voertuigen als je een geldige reden hebt.</li>
-            <li><span>3. New Life Rule</span>Bij overlijden begin je als een nieuw personage en keer je niet terug naar je vorige scène.</li>
-            <li><span>4. Cuff Rushing</span>Om iemand te boeien, moet je "cuffs" zeggen om aan te geven dat je hen vastbindt.</li>
-            <li><span>5. Staffleden</span>Volg altijd de instructies van staffleden op; zij hebben het laatste woord in zaken.</li>
-            <li><span>6. Roblox & ER:LC TOS</span>Houd je aan de Roblox en ER:LC Terms of Service. Overtredingen worden streng bestraft.</li>
-            <li><span>7. Auto-Jailing</span>Klik niet op "arrest" terwijl de verdachte in boeien is; je moet hen vervoeren. Als de verdachte twee keer de "detain requests" weigert, mag je hen gevangen zetten.</li>
-            <li><span>8. Groene Zones</span>Alle burger-spawnpunten zijn beschermd in aangewezen groene zones; hier mag niet worden geschoten of beroofd.</li>
-            <li><span>9. Liveries & Uniformen</span>Wanneer je een specifiek uniform draagt, moet je de bijbehorende voertuigskin gebruiken.</li>
-            <li><span>10. Crash Roleplay</span>Alle botsingen boven de 50 km/u moeten worden geroleplayed. Niet naleven leidt tot strikte moderatie.</li>
-            <li><span>11. Roleplay Verzoek</span>Sommige roleplays vereisen vooraf toestemming van staff.</li>
-            <li><span>12. Bounties</span>Bounties zijn niet toegestaan om klachten over willekeurige doden te voorkomen.</li>
-            <li><span>13. Verboden Auto's & Wapens</span>Gebruik geen verboden auto's of wapens die hieronder zijn vermeld. Niet-naleving leidt tot straf.</li>
-            <li><span>14. Void Roleplay</span>Ongeldige of onderbroken roleplays moeten als nietig worden beschouwd en genegeerd.</li>
-            <li><span>15. Meta-gaming</span>Het is niet toegestaan om informatie te gebruiken die buiten het spel is verkregen.</li>
-            <li><span>16. Baiting</span>Het is niet toegestaan om opzettelijk de aandacht van politieagenten en/of KMar-leden te trekken of hen zonder goede reden van hun werk te houden.</li>
-            <li><span>17. Criminaliteit & Overheidsmedewerkers</span>Overheidsmedewerkers mogen zich onder geen beding bezighouden met illegale activiteiten of in het bezit zijn van illegale items, tenzij dit noodzakelijk is voor de uitvoering van hun taken. Dit is onderhevig aan het oordeel van een stafflid. Voordat zij aan hun rol binnen de overheid beginnen, moeten medewerkers ervoor zorgen dat zij geen illegale items meer bezitten.
+        <h1>RealLifeRp - APV</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <ul class="rules-list">
+            <li>
+                <span>1. Realisme in Roleplay</span>
+                Zorg ervoor dat alle acties binnen de roleplay realistisch zijn.
+            </li>
+            <li>
+                <span>2. RDM & VDM</span>
+                Val alleen personen of voertuigen aan als je daar een geldige reden voor hebt.
+            </li>
+            <li>
+                <span>3. New Life Regel</span>
+                Na het sterven begin je als een nieuw personage en keer je niet terug naar je vorige situatie.
+            </li>
+            <li>
+                <span>4. Cuff Rushing</span>
+                Om iemand te boeien, moet je "boeien" zeggen om aan te geven dat je hen vastbindt.
+            </li>
+            <li>
+                <span>5. Staff Leden</span>
+                Volg altijd de instructies van staffleden op; zij hebben het laatste woord.
+            </li>
+            <li>
+                <span>6. Roblox & ER:LC TOS</span>
+                Houd je aan de Roblox en ER:LC Gebruiksvoorwaarden. Overtredingen worden streng bestraft.
+            </li>
+            <li>
+                <span>7. Automatisch Gevangen Zetting</span>
+                Klik niet op "arrest" terwijl de verdachte geboeid is; je moet hen vervoeren. Als de verdachte twee keer "detain requests" weigert, mag je hen gevangen zetten.
+            </li>
+            <li>
+                <span>8. Groene Zones</span>
+                Alle burger-spawnpunten zijn beschermde groene zones; hier mag niet geschoten of beroofd worden.
+            </li>
+            <li>
+                <span>9. Voertuigkleuren & Uniformen</span>
+                Wanneer je een specifiek uniform draagt, moet je het bijbehorende voertuig gebruiken.
+            </li>
+            <li>
+                <span>10. Crash Roleplay</span>
+                Alle ongelukken boven de 80 km/u moeten worden uitgespeeld. Het niet naleven hiervan leidt tot strenge maatregelen.
+            </li>
+            <li>
+                <span>11. Roleplay Verzoek</span>
+                Sommige roleplays vereisen voorafgaande toestemming van de staff.
+            </li>
+            <li>
+                <span>12. Premiejachten</span>
+                Premiejachten zijn niet toegestaan om klachten over willekeurige doden te voorkomen.
+            </li>
+            <li>
+                <span>13. Verboden Auto's & Wapens</span>
+                Gebruik geen verboden auto's of wapens. Overtreding leidt tot straf.
+            </li>
+            <li>
+                <span>14. Ongeldige Roleplay</span>
+                Ongeldige of onderbroken roleplays moeten als nietig worden beschouwd en genegeerd.
+            </li>
+            <li>
+                <span>15. Meta-gaming</span>
+                Het is niet toegestaan om informatie van buiten het spel te gebruiken.
+            </li>
+            <li>
+                <span>16. Baiting</span>
+                Het is niet toegestaan om opzettelijk de aandacht van politie of KMar te trekken zonder geldige reden.
+            </li>
+            <li>
+                <span>17. Criminaliteit & Overheidspersoneel</span>
+                Overheidspersoneel mag niet deelnemen aan illegale activiteiten of illegale items bezitten, tenzij noodzakelijk voor hun functie. Dit is ter beoordeling van de staff. Voor aanvang van hun rol moeten ze ervoor zorgen dat ze geen illegale items meer bezitten.
                 <br><br>
                 De volgende organisaties vallen onder deze regel:
                 <ul>
@@ -238,18 +226,25 @@
                     <li>Ministerie van Justitie</li>
                     <li>Overheid</li>
                 </ul>
-                Indien een overheidsmedewerker wordt betrapt op illegale activiteiten, zal hij naast de standaardstraf onmiddellijk worden ontslagen uit de betreffende organisatie.
+                Bij overtreding volgt ontslag uit de betreffende organisatie naast de standaardstraf.
                 <br><br>
-                Het is verboden om items te bezitten die afkomstig zijn van een overheidsdienst, waaronder maar niet beperkt tot:
+                Het is verboden om items te bezitten die afkomstig zijn van een overheidsdienst, zoals:
                 <ul>
                     <li>Dienstwapens</li>
                 </ul>
-                Overheidsmedewerkers mogen hun dienstwapens niet buiten dienst dragen, indien van toepassing. Een uitzondering wordt gemaakt voor politieagenten die een gespecialiseerde training hebben ondergaan. Deze agenten mogen hun dienstwapens buiten dienst dragen voor het uitvoeren van hun werkzaamheden.
+                Overheidspersoneel mag hun dienstwapen niet buiten dienst dragen, tenzij ze speciale training hebben gehad.
             </li>
         </ul>
+
+        <!-- Join Button -->
         <div class="join-button">
-            <a href="https://discord.gg/vcvNu7SXDY" target="_blank" rel="noopener noreferrer">Doe met ons mee</a>
+            <a href="https://discord.gg/vcvNu7SXDY" target="_blank" rel="noopener noreferrer">Word Lid van Onze Discord</a>
         </div>
-    </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2023 RealLifeRp. Alle rechten voorbehouden.
+    </footer>
 </body>
 </html>
