@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roleplay Rules</title>
     <link rel="icon" href="https://i.ibb.co/BfHCYBX/RLRP-2.jpg" type="image/jpeg">
+    <!-- Toevoegen van Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #eef2f3;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             color: #333;
         }
 
         .rules-container {
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
             padding: 30px;
             width: 90%;
             max-width: 800px;
-            margin: 20px;
+            margin: 50px auto;
+            backdrop-filter: blur(10px);
             transition: all 0.3s ease;
         }
 
@@ -60,24 +59,39 @@
         }
 
         li {
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             margin: 10px 0;
             padding: 20px;
             border-radius: 8px;
             font-size: 1.15em;
             line-height: 1.6em;
-            transition: transform 0.2s ease, background-color 0.2s ease;
             border-left: 6px solid #3498db;
+            position: relative;
+            overflow: hidden;
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(45deg, #3498db, #8e44ad);
+            transition: all 0.3s ease;
+        }
+
+        li:hover::before {
+            width: 100%;
         }
 
         li:hover {
-            transform: translateY(-5px);
-            background-color: #ecf0f1;
+            color: #fff;
+            background-color: transparent;
         }
 
         li span {
             font-weight: bold;
-            color: #000000;
+            color: #2c3e50;
             display: block;
             margin-bottom: 10px;
             font-size: 1.2em;
@@ -103,18 +117,18 @@
 
         .join-button a {
             text-decoration: none;
-            background-color: #3498db;
+            background: linear-gradient(45deg, #3498db, #8e44ad);
             color: #fff;
             padding: 15px 30px;
             border-radius: 8px;
             font-size: 1.2em;
             font-weight: 600;
-            transition: background-color 0.3s ease;
+            transition: background 0.3s ease;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .join-button a:hover {
-            background-color: #2980b9;
+            background: linear-gradient(45deg, #8e44ad, #3498db);
         }
 
         @media (max-width: 600px) {
@@ -133,6 +147,7 @@
 
             .rules-container {
                 padding: 20px;
+                margin: 20px;
             }
 
             .join-button a {
@@ -149,42 +164,42 @@
         </a>
         <h1>Roleplay Rules</h1>
         <ul>
-            <li><span>1. Realism in Roleplay</span>Ensure that all actions within the roleplay are realistic.</li>
-            <li><span>2. RDM & VDM</span>Only engage in shooting at individuals or vehicles if you have a valid reason.</li>
-            <li><span>3. New Life Rule</span>Upon dying, start as a new character and do not return to your previous scene.</li>
-            <li><span>4. Cuff Rushing</span>To cuff someone, you must say "cuffs" to indicate that you are restraining them.</li>
-            <li><span>5. Staff Members</span>Always comply with instructions from staff members, who have the final say in matters.</li>
-            <li><span>6. Roblox & ER:LC TOS</span>Adhere to the Roblox and ER:LC Terms of Service. Violations will be heavily moderated.</li>
-            <li><span>7. Auto-Jailing</span>Do not click "arrest" while the suspect is in cuffs; you must transport them instead. If the suspect declines the "detain requests" twice, you may jail them.</li>
-            <li><span>8. Green Zones</span>All civilian spawns are protected in designated green zones, and no shooting or robbing is permitted.</li>
-            <li><span>9. Liveries & Uniforms</span>When wearing a specific uniform, you must use the corresponding vehicle livery.</li>
-            <li><span>10. Crash Roleplay</span>All crashes exceeding 50mph must be roleplayed. Failing to do so will result in strict moderation.</li>
-            <li><span>11. Roleplay Request</span>Some roleplays require prior permission from staff.</li>
-            <li><span>12. Bounties</span>Bounties are not permitted to avoid complaints about random deaths.</li>
-            <li><span>13. Banned Cars & Guns</span>Do not use any banned cars or guns listed below. Non-compliance will result in punishment.</li>
-            <li><span>14. Void Roleplay</span>Invalid or interrupted roleplays should be considered void and disregarded.</li>
-            <li><span>15. Meta-gaming</span>It is not allowed to use information obtained outside of the game.</li>
-            <li><span>16. Baiting</span>It is not permitted to deliberately try to attract the attention of police officers and/or KMar members or to keep them from their work without good reason.</li>
-            <li><span>17. Crime & Government Employees</span>Government employees are strictly prohibited from engaging in any illegal activities or possessing illegal items, unless it is necessary for the execution of their job duties. This is subject to the judgment of a staff member. Before beginning their role within the government, employees are required to ensure that they no longer possess any illegal items.
+            <li><span>1. Realisme in Roleplay</span>Zorg ervoor dat alle acties binnen de roleplay realistisch zijn.</li>
+            <li><span>2. RDM & VDM</span>Val anderen of voertuigen alleen aan als je een geldige reden hebt.</li>
+            <li><span>3. New Life Rule</span>Na je dood begin je als een nieuw personage en keer je niet terug naar je vorige scène.</li>
+            <li><span>4. Cuff Rushing</span>Om iemand te boeien, moet je "cuffs" zeggen om aan te geven dat je hen vastbindt.</li>
+            <li><span>5. Staffleden</span>Volg altijd de instructies van staffleden op; zij hebben het laatste woord.</li>
+            <li><span>6. Roblox & ER:LC TOS</span>Houd je aan de Roblox en ER:LC Terms of Service. Overtredingen worden streng aangepakt.</li>
+            <li><span>7. Auto-Jailing</span>Klik niet op "arrest" terwijl de verdachte in de boeien is; je moet hen vervoeren. Als de verdachte twee keer "detain requests" weigert, mag je hen opsluiten.</li>
+            <li><span>8. Groene Zones</span>Alle civiele spawns zijn beschermde groene zones; hier mag niet geschoten of beroofd worden.</li>
+            <li><span>9. Liveries & Uniformen</span>Draag je een specifiek uniform, gebruik dan ook de bijbehorende voertuigbestickering.</li>
+            <li><span>10. Crash Roleplay</span>Alle ongelukken boven de 50 km/u moeten worden uitgespeeld. Nalaten hiervan leidt tot strenge sancties.</li>
+            <li><span>11. Roleplay Verzoeken</span>Sommige roleplays vereisen voorafgaande toestemming van staff.</li>
+            <li><span>12. Bounties</span>Bounties zijn niet toegestaan om klachten over willekeurige moorden te voorkomen.</li>
+            <li><span>13. Verboden Auto's & Wapens</span>Gebruik geen verboden auto's of wapens zoals hieronder vermeld. Niet-naleving leidt tot straf.</li>
+            <li><span>14. Void Roleplay</span>Ongeldige of onderbroken roleplays moeten als nietig worden beschouwd en genegeerd.</li>
+            <li><span>15. Meta-gaming</span>Het is niet toegestaan om informatie te gebruiken die buiten het spel is verkregen.</li>
+            <li><span>16. Baiting</span>Het is niet toegestaan om opzettelijk de aandacht van politie- of KMar-leden te trekken zonder goede reden.</li>
+            <li><span>17. Criminaliteit & Overheidspersoneel</span>Overheidspersoneel mag zich niet bezighouden met illegale activiteiten of in het bezit zijn van illegale items, tenzij dit noodzakelijk is voor hun werkzaamheden en onder oordeel van een stafflid. Voor aanvang van hun functie moeten ze ervoor zorgen dat ze geen illegale items bezitten.
                 <br><br>
-                The following organizations are subject to this rule:
+                De volgende organisaties vallen onder deze regel:
                 <ul>
-                    <li>Police Force</li>
-                    <li>Royal Netherlands Marechaussee</li>
-                    <li>Ministry of Justice</li>
-                    <li>Government</li>
+                    <li>Politie</li>
+                    <li>Koninklijke Marechaussee</li>
+                    <li>Ministerie van Justitie</li>
+                    <li>Overheid</li>
                 </ul>
-                If a government employee is caught engaging in illegal activities, in addition to the standard penalty, they will face immediate dismissal from the relevant organization.
+                Bij overtreding volgt naast de standaardstraf ook directe ontslag uit de betreffende organisatie.
                 <br><br>
-                It is prohibited to possess items that originate from a government service, including but not limited to:
+                Het is verboden om in het bezit te zijn van items afkomstig van een overheidsdienst, zoals:
                 <ul>
-                    <li>Service weapons</li>
+                    <li>Dienstwapens</li>
                 </ul>
-                Government employees are not allowed to carry their service weapons outside of duty, if applicable. An exception is made for police officers who have undergone specialized training. These officers are permitted to carry their service weapons outside of duty for the purpose of executing their work.
+                Overheidspersoneel mag hun dienstwapens niet buiten diensttijd dragen, tenzij ze hiervoor speciaal zijn opgeleid.
             </li>
         </ul>
         <div class="join-button">
-            <a href="https://discord.gg/vcvNu7SXDY" target="_blank" rel="noopener noreferrer">Join Us</a>
+            <a href="https://discord.gg/vcvNu7SXDY" target="_blank" rel="noopener noreferrer">Doe met ons mee</a>
         </div>
     </div>
 </body>
