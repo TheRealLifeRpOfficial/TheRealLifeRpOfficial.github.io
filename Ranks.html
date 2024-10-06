@@ -1,1 +1,187 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koninklijke Marechaussee - RealLifeRP</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1c1c1c;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #e94545;
+        }
+        .content {
+            padding: 40px;
+        }
+        h2 {
+            color: #e94545;
+            font-size: 2em;
+            border-bottom: 2px solid #e94545;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            background-color: #333333;
+        }
+        table, th, td {
+            border: 1px solid #444444;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            color: #f0f0f0;
+        }
+        th {
+            background-color: #444444;
+            color: #e94545;
+        }
+        tr:nth-child(even) {
+            background-color: #2b2b2b;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: #e94545;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: #e94545;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .rp-logo {
+            text-align: center;
+            margin: 20px;
+        }
+        .rp-logo img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Koninklijke Marechaussee - RealLifeRP</h1>
+    </header>
+
+    <div class="rp-logo">
+        <img src=https://i.ibb.co/BfHCYBX/RLRP-2.jpg alt="RealLifeRP Logo">
+    </div>
+
+    <div class="content">
+        <p>Welcome to the Koninklijke Marechaussee information page for the RealLifeRP server. Here, you will find details about the different units within the KMar and a comparison of the ranks between the KMar and the police.</p>
+
+        <h2>Eenheden binnen de KMar</h2>
+        <table>
+            <tr>
+                <th>Unit</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Brigade</td>
+                <td>Regional units responsible for border control and police tasks.</td>
+            </tr>
+            <tr>
+                <td>Brigade Speciale Beveiligingsopdrachten (BSB)</td>
+                <td>Special unit for the protection of high-risk persons and objects.</td>
+            </tr>
+            <tr>
+                <td>Hoog Risico Beveiliging (HRB)</td>
+                <td>Special unit for the protection of vulnerable infrastructure and persons.</td>
+            </tr>
+            <tr>
+                <td>Brigade Training & Opleiding (BTO)</td>
+                <td>Unit responsible for training KMar personnel.</td>
+            </tr>
+        </table>
+
+        <h2>Ranks within the Koninklijke Marechaussee and Police</h2>
+        <table>
+            <tr>
+                <th>KMar Rank</th>
+                <th>Police Equivalent</th>
+            </tr>
+            <tr>
+                <td>Marechaussee der 3e klasse</td>
+                <td>Aspirant</td>
+            </tr>
+            <tr>
+                <td>Marechaussee der 2e klasse</td>
+                <td>Surveillant</td>
+            </tr>
+            <tr>
+                <td>Marechaussee der 1e klasse</td>
+                <td>Agent</td>
+            </tr>
+            <tr>
+                <td>Brigadier</td>
+                <td>Hoofdagent</td>
+            </tr>
+            <tr>
+                <td>Opperwachtmeester</td>
+                <td>Brigadier</td>
+            </tr>
+            <tr>
+                <td>Adjudant</td>
+                <td>Inspecteur</td>
+            </tr>
+            <tr>
+                <td>Eerste luitenant</td>
+                <td>Inspecteur</td>
+            </tr>
+            <tr>
+                <td>Kapitein</td>
+                <td>Inspecteur</td>
+            </tr>
+            <tr>
+                <td>Majoor</td>
+                <td>Inspecteur</td>
+            </tr>
+            <tr>
+                <td>Luitenant-kolonel</td>
+                <td>Hoofdinspecteur</td>
+            </tr>
+            <tr>
+                <td>Kolonel</td>
+                <td>Commissaris</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RealLifeRP Server - Koninklijke Marechaussee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+"""
+
+# Save the version with the theme from the image to a new HTML file
+html_image_theme_file_path = '/mnt/data/kmar_units_and_ranks_image_theme.html'
+
+with open(html_image_theme_file_path, 'w') as file:
+    file.write(html_content_image_theme)
+
+html_image_theme_file_path
